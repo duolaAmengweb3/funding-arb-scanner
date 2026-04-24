@@ -6,6 +6,9 @@ export type Venue =
   | "dydx"
   | "gmx"
   | "drift"
+  | "vertex"
+  | "paradex"
+  | "aevo"
   | "lighter";
 
 export interface FundingRate {

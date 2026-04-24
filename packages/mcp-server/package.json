@@ -1,6 +1,6 @@
 {
   "name": "funding-arb-scanner",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Scan HL + CEX + DEX perp funding for arb opportunities — MCP server",
   "license": "MIT",
   "keywords": [
