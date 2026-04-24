@@ -1,0 +1,47 @@
+{
+  "name": "funding-arb-scanner",
+  "version": "0.1.0",
+  "description": "Scan HL + CEX + DEX perp funding for arb opportunities — MCP server",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "hyperliquid",
+    "funding",
+    "arbitrage",
+    "perp",
+    "binance",
+    "bybit",
+    "okx",
+    "cexagent",
+    "claude",
+    "cursor"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": { "funding-arb-scanner": "./dist/index.js" },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "funding-arb-scanner-core": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": { "node": ">=20" },
+  "publishConfig": { "access": "public" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duolaAmengweb3/funding-arb-scanner.git"
+  },
+  "homepage": "https://funding-arb-scanner.vercel.app",
+  "bugs": "https://github.com/duolaAmengweb3/funding-arb-scanner/issues"
+}
