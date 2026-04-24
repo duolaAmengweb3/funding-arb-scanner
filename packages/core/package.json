@@ -1,6 +1,6 @@
 {
   "name": "funding-arb-scanner-core",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Funding rate clients for HL + CEX + DEX perps",
   "license": "MIT",
   "type": "module",

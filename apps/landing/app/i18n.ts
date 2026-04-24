@@ -40,7 +40,7 @@ const venuesEn: Venue[] = [
   { name: "OKX SWAP", period: "8h funding", ready: true },
   { name: "dYdX v4", period: "1h funding", ready: true },
   { name: "GMX v2", period: "borrow-style", ready: false },
-  { name: "Drift", period: "1h funding", ready: false },
+  { name: "Drift", period: "1h funding", ready: true },
   { name: "Lighter", period: "1h funding", ready: false },
 ];
 const venuesZh: Venue[] = [
@@ -50,7 +50,7 @@ const venuesZh: Venue[] = [
   { name: "OKX SWAP", period: "每 8 小时 funding", ready: true },
   { name: "dYdX v4", period: "每小时 funding", ready: true },
   { name: "GMX v2", period: "借贷费率", ready: false },
-  { name: "Drift", period: "每小时 funding", ready: false },
+  { name: "Drift", period: "每小时 funding", ready: true },
   { name: "Lighter", period: "每小时 funding", ready: false },
 ];
 
@@ -85,7 +85,7 @@ export const strings: Record<Lang, Strings> = {
     },
     venues: {
       eyebrow: "Venue coverage",
-      title: "5 live, 3 coming.",
+      title: "6 live, 2 coming.",
       lead: "Each venue hits its own rate limit with its own auth story. We wrap all of that. When HL has BTC funding at +40%/yr and Binance at +8%/yr, you see it in one answer.",
       items: venuesEn,
     },
@@ -157,7 +157,7 @@ export const strings: Record<Lang, Strings> = {
     },
     venues: {
       eyebrow: "覆盖的交易所",
-      title: "5 家上线 · 3 家在途。",
+      title: "6 家上线 · 2 家在途。",
       lead: "每家交易所各有限速和签名要求,我们全封装。HL BTC funding +40%/年,Binance +8%/年 —— 你一次看全。",
       items: venuesZh,
     },
