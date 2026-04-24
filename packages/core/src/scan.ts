@@ -1,6 +1,7 @@
 import { getBinanceAllFunding } from "./cex/binance.js";
 import { getBybitAllFunding } from "./cex/bybit.js";
 import { getOkxAllFunding } from "./cex/okx.js";
+import { getDydxAllFunding } from "./dex/dydx.js";
 import { getHlAllFunding } from "./hl.js";
 import type { FundingRate, FundingSpread, Venue } from "./types.js";
 
@@ -19,6 +20,7 @@ export async function getAllFunding(): Promise<ScanResult> {
     ["binance", getBinanceAllFunding],
     ["bybit", getBybitAllFunding],
     ["okx", getOkxAllFunding],
+    ["dydx", getDydxAllFunding],
   ];
 
   const results = await Promise.allSettled(targets.map(([, fn]) => fn()));
